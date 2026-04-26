@@ -1,8 +1,12 @@
 # Python
+venv/
+.venv/
 backend/venv/
-backend/__pycache__/
-backend/**/__pycache__/
-backend/*.db
+backend/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.db
 backend/.env
 backend/ml/anomaly_model.pkl
 
@@ -12,4 +16,4 @@ frontend/dist/
 
 # OS
 .DS_Store
-*.pyc
+Thumbs.db
