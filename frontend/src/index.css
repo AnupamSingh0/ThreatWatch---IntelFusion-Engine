@@ -1,0 +1,18 @@
+:root {
+  --bg:#0a0f18; --panel:#0f1824; --border:#1e2e42;
+  --accent:#4a90c4; --accent2:#6b8f47; --red:#e8445a;
+  --yellow:#d4a017; --blue:#4a90c4; --muted:#2a4060;
+  --text:#d0dff0; --dim:#5a7a9a; --radius:10px;
+  --font-mono:'JetBrains Mono','Fira Code',monospace;
+  --font-ui:'Inter',sans-serif;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:var(--font-ui); min-height:100vh; }
+::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-track{background:var(--bg)} ::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+.mono{font-family:var(--font-mono)}
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.fade-in{animation:fadeIn 0.3s ease}
+.flash-row{animation:flashRow 2s ease}
+@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:0.3}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes flashRow{0%{background:rgba(74,144,196,0.15)}100%{background:transparent}}
